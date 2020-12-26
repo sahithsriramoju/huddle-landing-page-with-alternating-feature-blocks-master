@@ -1,0 +1,30 @@
+$pink: hsl(322, 100%, 66%);
+$very-pale-cyan: hsl(193, 100%, 96%);
+$very-dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+$font-size:18px;
+$headings-font-family: "Poppins";
+$body-font-family: "Open Sans";
+$font-weight-1: 400;
+$font-weight-2: 600;
+$font-weight-3: 700;
+$bp-large:1244px;
+$bp-small:375px;
+
+*{
+    margin:0;
+    padding:0;
+    //for debugging css
+    /*background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;*/
+}
+html{
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+}
+body{
+    font-family: $body-font-family;
+    font-size:$font-size;
+}

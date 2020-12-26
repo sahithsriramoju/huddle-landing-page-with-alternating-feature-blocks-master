@@ -1,0 +1,115 @@
+.pd-rt-lg{
+    padding-right:125px;
+}
+.pd-lt-lg{
+    padding-left:125px;
+}
+.content{
+&__container{
+    padding:50px 50px 300px 50px;
+    position: relative;
+    
+    @media only screen and (max-width:$bp-small){
+        padding:10px;
+    }
+}
+&__box{
+    margin:25px;
+    box-shadow:10px 10px 10px 10px rgba(163, 155, 155, 0.075) ;
+    display: flex;
+    //padding:25px;
+    padding: 25px 25px 25px 100px;
+    border-radius:25px;
+    &:nth-last-child(2){
+        margin-bottom: 60px;
+    }
+    @media only screen and (max-width:$bp-small){
+        &:nth-last-child(2){
+            margin-bottom: 180px;
+        }
+    }
+    &--bold{
+        font-family: $headings-font-family;
+            font-size:40px;
+            font-weight:$font-weight-2;
+            padding:10px 7px;
+            color:$very-dark-cyan;
+            @media only screen and (max-width:$bp-small){
+                font-size:18px;
+                text-align: center;
+            }
+    }
+   
+    @media only screen and (max-width:$bp-small){
+        padding:20px;
+    }
+    &--flex-direction{
+        flex-direction: row-reverse;
+    }
+    @media only screen and (max-width:$bp-small){
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    &--floating{
+        position: absolute;
+        bottom:-6%;
+        left: 20%;
+        box-shadow:10px 10px 10px 10px rgba(163, 155, 155, 0.075) ;
+        padding:50px;
+        width:55vw;
+        margin-right:auto;
+        margin-left: auto;
+        text-align:center;
+        border-radius:25px;
+        background-color: white;
+        @media only screen and (max-width:$bp-small){
+            bottom:-5%;
+            left:5%;
+            padding:20px 10px;
+            width:85vw;
+        }
+    }
+    &--text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //padding:25px 125px 25px 100px;
+        //padding-right: 125px;
+        @media only screen and (max-width:$bp-small){
+            padding:0px;
+        }
+    }
+    &--h2{
+        font-size:25px;
+        font-family: $headings-font-family;
+        font-weight: $font-weight-2;
+        color: $very-dark-cyan;
+        padding:10px;
+        @media only screen and (max-width:$bp-small){
+            font-size:$font-size;
+        }
+    }
+    &--p{
+        font-size:$font-size;
+         font-family: $body-font-family;
+         font-weight: $font-weight-1;
+         color:$grayish-blue;
+         padding:10px;
+         @media only screen and (max-width:$bp-small){
+            font-size:14px;
+        }
+    }
+    &--image{
+        padding:25px;
+        @media only screen and (max-width:$bp-small){
+            padding:20px;
+        }
+        &-src{
+            width:28vw;
+            @media only screen and (max-width:$bp-small){
+                width:50vw;
+            }
+        }
+    }
+}
+}

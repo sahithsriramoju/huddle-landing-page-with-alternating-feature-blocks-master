@@ -1,0 +1,84 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        border: none;
+        text-decoration: none;
+    box-shadow:5px 10px rgba(163, 155, 155, 0.075) ;
+    border-radius:125px;
+    font-family: $body-font-family;
+   font-size:15px;
+   font-weight: $font-weight-3;
+   cursor: pointer;
+   transition: all .2s;
+    }
+    &:hover{
+       opacity:0.5;
+        transform: translateY(-3px);
+        box-shadow:10px 10px rgba(163, 155, 155, 0.075) ;
+    }
+   &:active,
+   &:focus{
+    opacity: 0.5;
+    outline:none;
+    transform:translateY(-1px);
+    box-shadow:10px 10px rgba(163, 155, 155, 0.075) ;
+   }
+}
+.header__btn{
+    &,
+    &:link,
+    &:visited
+    {
+        background-color:white;
+   
+   
+    color: $very-dark-cyan;
+    padding:13px  50px;
+    }
+    
+    @media only screen and (max-width:$bp-small){
+        padding:10px  30px;
+    }
+    
+}
+.header__flex--btn{
+    &,
+    &:link,
+    &:visited{
+        background-color:$pink;
+    color:white;
+    padding:15px 45px;
+    align-self: start;
+    margin:18px 10px;
+    }
+    @media only screen and (max-width:$bp-small){
+        align-self: center;
+    }
+}
+.btn-pd-sm{
+    padding:25px 85px;
+    font-size: $font-size;
+    @media only screen and (max-width:$bp-small){
+        padding:15px 45px;
+
+    }
+}
+.content{
+    &__box--btn{
+        &,
+        &:link,
+        &:visited{
+            background-color:$pink;
+        color:white;
+        padding:25px 85px;
+        align-self:center;
+        margin:18px 10px;
+        font-size: $font-size;
+        }
+        @media only screen and (max-width:$bp-small){
+            padding:15px 45px;
+            font-size:15px;
+        }
+    }
+}

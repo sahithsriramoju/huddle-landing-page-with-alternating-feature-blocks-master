@@ -1,0 +1,103 @@
+footer{
+    background-color:$very-dark-cyan;
+    padding:200px 75px 75px 75px;
+    @media only screen and (max-width:$bp-small){
+        padding:150px 15px 75px 15px;
+        
+    }
+}
+.footer{
+    &__logo{
+        fill:white;
+        }
+        &__container{
+           display:flex;
+           padding:30px 0px;
+           align-items:start;
+           justify-content: space-between;
+
+           @media only screen and (max-width:$bp-small){
+            flex-direction: column;
+            
+        }
+        }
+        &__nav{
+            list-style: none;
+            padding:10px;
+            display:flex;
+            align-items:start;
+        }
+        &__nav--item{
+            outline:none;
+            text-decoration: none;
+            font-family:$body-font-family;
+        font-weight: $font-weight-1;
+        font-size: 15px;
+        color:$very-pale-cyan;
+        
+        &:hover,
+        &:active{
+            border-bottom: 1px solid $very-pale-cyan;
+            
+        }
+            
+        }
+        &__links{ 
+           // margin-right:50px;
+           
+           font-family:$body-font-family;
+            font-weight: $font-weight-1;
+            font-size: 15px;
+            color:$very-pale-cyan;
+            &--icons{
+                padding-right:10px;
+            }
+            &--contacts{
+              width:350px;
+              
+            }
+           
+            
+        }
+        &__social--link{
+            &:hover,
+            &:active
+            {
+                .footer__social--icons-svg{
+                    border: 1px solid $pink;
+                }
+                .footer__social--icon{
+                    fill:$pink;
+                }
+            }
+        }
+        &__social--icons{
+            @media only screen and (max-width:$bp-small){
+              align-self:center;
+            }
+        }
+        &__social--icons-svg{
+            width:15px;
+            height:15px;
+            padding:10px;
+            border: 1px solid $very-pale-cyan;
+            border-radius:50%;
+            margin:5px;
+           
+        }
+        &__social--icon{
+            fill:$very-pale-cyan;
+           
+
+        }
+        &__copyrights{
+           font-size: 14px;
+           font-family:$body-font-family;
+            font-weight: $font-weight-1;
+            color:$very-pale-cyan;
+           text-align: right;
+           @media only screen and (max-width:$bp-small){
+            text-align: center;
+          }
+        }
+}
